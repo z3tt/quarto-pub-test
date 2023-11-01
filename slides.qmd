@@ -1,0 +1,48 @@
+---
+title: "Quarto Pub Test"
+subtitle: "<span style='font-size:1.25em;'>Principles & Best Practices to Tell a Story with Data</span>"
+author: "<a href='https://www.cedricscherer.com' style='color:#28a87d;font-weight:600;'>Dr. Cédric Scherer</a>&ensp;//&ensp;October 5<sup>th</sup> 2023"
+format:
+  revealjs:
+    theme: slides.scss
+    logo: img/logo.png
+    footer: '**[Cédric Scherer](https://cedricscherer.com)** // Data Visualization & Information Design'
+    transition: fade
+    progress: true
+    multiplex: false
+    preview-links: true
+    scrollable: false
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+    embed-resources: false
+editor: source
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+    retina: 3
+    dpi: 200
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  fig-width: 12
+  fig-height: 7
+---
+
+# Welcome!
+
+
+
+##  Test
+
+```{r}
+#| label: test-plot
+#| echo: false
+library(ggplot2)
+
+ggplot(mpg, aes(hwy, cty)) +
+   geom_point()
+```
+
+

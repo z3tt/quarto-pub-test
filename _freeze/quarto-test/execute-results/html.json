@@ -1,0 +1,18 @@
+{
+  "hash": "8eaef71670bd5ea150fda50673b3ecb9",
+  "result": {
+    "markdown": "---\ntitle: \"Quarto Test\"\nsubtitle: \"<span style='font-size:1.25em;'>Principles & Best Practices to Tell a Story with Data</span>\"\nauthor: \"<a href='https://www.cedricscherer.com' style='color:#28a87d;font-weight:600;'>Dr. Cédric Scherer</a>&ensp;//&ensp;October 5<sup>th</sup> 2023\"\nformat:\n  revealjs:\n    theme: slides.scss\n    logo: img/logo.png\n    footer: '**[Cédric Scherer](https://cedricscherer.com)** // Data Visualization & Information Design'\n    transition: fade\n    progress: true\n    multiplex: false\n    preview-links: true\n    scrollable: false\n    hide-inactive-cursor: true\n    highlight-style: printing\n    pause: true\n    embed-resources: true\neditor: source\nknitr:\n  opts_chunk:\n    dev: \"ragg_png\"\n    retina: 3\n    dpi: 200\nexecute:\n  freeze: auto\n  cache: true\n  echo: true\n  fig-width: 12\n  fig-height: 7\n---\n\n\n# Welcome!\n\n\n\n##  Test\n\n\n::: {.cell hash='quarto-test_cache/revealjs/test-plot_3d50531b9bb17c742d58f211a1ea35c5'}\n::: {.cell-output-display}\n![](quarto-test_files/figure-revealjs/test-plot-1.png){width=2400}\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
